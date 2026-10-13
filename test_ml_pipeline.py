@@ -34,7 +34,7 @@ class TestMLPipeline(unittest.TestCase):
             "assignment_marks": 80,
             "previous_score": 78
         }])
-prediction = model.predict(sample)[0]
+        prediction = model.predict(sample)[0]
         self.assertIn(int(prediction), [0, 1])
 
     def test_high_performance_student(self):
